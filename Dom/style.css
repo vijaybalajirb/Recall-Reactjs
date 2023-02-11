@@ -1,0 +1,23 @@
+.header {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.division {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(15, 171, 171);
+    background-color: yellow;
+}
+
+.body {
+    background-color: aqua;
+    padding: 10px;
+}

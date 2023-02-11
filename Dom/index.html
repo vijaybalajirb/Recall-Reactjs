@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div id="root"></div>
+</body>
+<script>
+  //HardCoded heading
+  const Header = document.createElement('h1');
+  Header.innerHTML = 'Basics of DOM manipulation';
+  document.getElementById('root').appendChild(Header);
+  Header.setAttribute('class', 'header');
+
+  //Root element
+  let root = document.getElementById('root');
+
+  //Creating function for all manipulations
+  function createElement(ele){
+    return document.createElement(ele);
+  }
+  function setAttribute(ele, attribute,value){
+    return ele.setAttribute(attribute,value);
+  }
+  function appendChild(ele, child){
+    return ele.appendChild(child);
+  }
+  function append(ele){
+    return document.body.appendChild(ele);;
+  }
+
+  function appendTORoot(ele){
+    return root.appendChild(ele);
+  }
+
+
+
+  const x = createElement('div');
+  x.innerHTML = 'Div element Created using functions and attributes added';
+  setAttribute(x, 'class', 'division');
+  appendTORoot(x);
+ 
+  const linebreak = createElement('br');
+  appendTORoot(linebreak);
+  
+  //looping through data;
+  const loopheader = createElement('h2');
+  loopheader.innerHTML = 'Looping DOM manipulation';
+  appendTORoot(loopheader);
+  const data = ['one','two','three','four','five'];
+  
+  data.forEach((val)=>{
+    vals = createElement('h3');
+    vals.innerHTML = val;
+    appendTORoot(vals);
+  })
+ 
+
+</script>
+</html>
