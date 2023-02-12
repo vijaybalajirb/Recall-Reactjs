@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href='index.css'>
 </head>
 <body>
     <div id="root">
@@ -21,23 +22,8 @@
      (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.*/
 </script>
 
-<script>
-    const heading = React.createElement('h1',{
-        //Tag attributes comes here.
-        id:'titles'
-    },'Hai React');
-    const heading1 = React.createElement('h2',{
-        id:'titles'
-    },'Hai React');
-    const container = React.createElement('div',{
-        //Tag attributes comes here.
-        id:'container'
-    },[heading,heading1]);
-
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(container);   
-    console.log(heading) //gives you object.
-</script>
+<script src="App.js"></script>
+  
     
 </body>
 </html>
