@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        Not Rendered issue in React root config
+    </div>
 <script 
     crossorigin 
     src="https://unpkg.com/react@18/umd/react.development.js">
@@ -20,9 +22,21 @@
 </script>
 
 <script>
-    const heading = React.createElement('h1',{},'Namaste React');
+    const heading = React.createElement('h1',{
+        //Tag attributes comes here.
+        id:'titles'
+    },'Namaste React');
+    const heading1 = React.createElement('h2',{
+        id:'titles'
+    },'Namaste React');
+    const container = React.createElement('div',{
+        //Tag attributes comes here.
+        id:'container'
+    },[heading,heading1]);
+
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(heading);    
+    root.render(container);   
+    console.log(heading) //gives you object.
 </script>
     
 </body>
