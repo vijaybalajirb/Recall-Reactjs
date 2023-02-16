@@ -36,6 +36,12 @@ In case of defer - HTML parsing will go on and the script are executed only when
 When should we use what
 If script are interdependent then async is not a good option to use.
 
+Package.json
+version with ~ will give you bug fixes
+version with ^ Will help you to use old versions of package
+
+Why Package-lock.json - To maintain the same versions of packages.
+
 
 
 

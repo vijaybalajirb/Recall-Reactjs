@@ -1,0 +1,30 @@
+{
+  "name": "recallreact",
+  "version": "1.0.0",
+  "description": "Recalling the reactjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijaybalajirb/Recall-Reactjs.git"
+  },
+  "author": "Vijay Balaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijaybalajirb/Recall-Reactjs/issues"
+  },
+  "homepage": "https://github.com/vijaybalajirb/Recall-Reactjs#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
